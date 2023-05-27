@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.Main{
+    border: 1px black solid;
+    width: 1200px;
+    height: 870px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   background-color: black;
+}
+
+.container{
+
+    border: 1px black solid;
+    height: 400px;
+    width: 200px;
+}
+button{
+    padding: 10px;
+    width: 60px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 1px red;
+    border-style: none;
+    background-color: gold;
+    font-size: 20px;
+
+}
+.off{
+    padding: 10px;
+    width: 60px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px 0px rgb(229, 255, 0);
+    border-style: none;
+    background-color: rgb(255, 0, 0);
+    margin-left: 15px;
+}
+    </style>
+
+
+</head>
+<body>
+
+    <div class="Main">
+
+    <div class="container">
+        <img src="./a.png" alt="" id="bulb" onmouseover="On()" onmouseout="Off()">
+    </div>
+    <button onclick="On()">ON</button>
+    <button class="off" onclick="Off()">OFF</button>
+    </div>
+
+<script>
+
+ function On(){
+    document.getElementById("bulb").src="./b.png"
+ }
+ function Off(){
+    document.getElementById("bulb").src="./a.png"
+ }
+
+
+
+</script>
+</body>
+</html>
